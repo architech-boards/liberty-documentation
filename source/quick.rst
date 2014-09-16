@@ -11,10 +11,22 @@ Hardware requirements
 - Renesas E1 on-chip debugger
 - PC with terminal software (such as HyperTerminal)
 
-::
+.. _Board:
 
- **TODO Liberty board image**
- **TODO Dscription of board features**
+Board features
+--------------
+
+| Liberty board has a 6 pin header connector *(yellow circled in figure below)* that can be used for: 
+| - debug (with E1 pod - see hardware documentation for pinout)
+| - connect TTL-USB converter to see a "dump" of all comunication between Host MCU and BLE ML7105 module
+
+Liberty has a RGB led that monitor main BLE state *(red circled in figure below)*
+
+.. image:: _images/board/liberty_header.jpg 
+
+.. note::
+ **see hardware documentation for Liberty header pinout and how to connect for debug and serial dump**
+
 
 Software requirements
 ---------------------
@@ -22,7 +34,7 @@ Software requirements
 - e2studio Version 2.2.0.13 and KPIT GNURL78 Version 13.02-ELF-MP1 compiler
 - Liberty_BLE_v1 firmware 
 - PC terminal emulator (such as HyperTerminal)
-- PC software Liberty (to connect with Liberty board)
+- Liberty Software Application for PC or SmartPhone (to connect with Liberty board)
 
 .. note::
 
@@ -30,10 +42,11 @@ Software requirements
  | :ref:`E2studio Suite Install`
  
 
-HyperTerminal settings
-----------------------
+Communication dump
+------------------
 
-Set your HyperTerminal COMx parameter:
+If you like to use serial dump to monitor communication between CPU and ML7105, connect a TLL-USB converter as described in :ref:`Board` note. You can use a terminal software on your PC to see this dump.
+Here settings required for HyperTerminal COMx parameter:
 
 | speed = 115200 baud
 | data with =  8
@@ -49,20 +62,17 @@ Hardware setup
 --------------
 Plug the Battery into socket adapter (see figure below)
 
+.. image:: _images/board/liberty_battery.jpg 
+
 Red led will ON to indicate initial settings (if connected, you can see the commnication dump on PC HyperTerminal)
 
 After initialization, the green led will flash every 2 second to indicate that Liberty is in active state waiting connection.
 
-Try to connect an pair with Liberty PC software, the green led will lamp (half second period), and after the yellow light means "device paired"
-See at Liberty PC Software user guide to perfom basic functions with Liberty board. 
+Try to connect an pair with Liberty Software Application, the green led will lamp (half second period), and after the green ON means "device paired"
+Use Liberty Application (PC or Smartphone) Software to perfom basic functions with Liberty board. 
 
-For debugging purpose, you can use Renesas E1 on-chip debugger. You must have a cable adapter to connect emulator pod with Liberty board
+For debugging purpose, you can use Renesas E1 on-chip debugger. You must have a cable adapter to connect emulator pod with Liberty board (see hardware documentation)
 
-::
-
- **TODO image e1**
- **TODO decription of E1 connection with board
- **TODO image cable adapter**
 
 Liberty Board FW installation & setup
 -------------------------------------
@@ -75,7 +85,7 @@ Liberty Board FW installation & setup
 
 .. image:: _images/WorkFolderPrj.jpg 
 
-- Unzip all files from Liberty_BLE_v1.zip into the folder **C:\\Users\\** *MyUserName* **\\My Documents\\e2_studio\\workspace\\Liberty_BLE_v1** just created 
+- Unzip all files from Liberty.zip into the folder **C:\\Users\\** *MyUserName* **\\My Documents\\e2_studio\\workspace\\Liberty_BLE_v1** just created 
 
 .. image:: _images/WorkFolderPrjFiles.jpg 
 
@@ -119,7 +129,7 @@ Liberty Board FW installation & setup
 
 .. image:: _images/import6.jpg
 
-- When clean has benn made, point mouse over hammer icon on the toolbar and click it (see image below). Hardware debug build will start.
+- When clean has been made, point mouse over hammer icon on the toolbar and click it (see image below). Hardware debug build will start.
 
 .. image:: _images/import7.jpg
 
