@@ -6,7 +6,7 @@
 Welcome to Liberty Board's documentation!
 =========================================
 
-:Version: 1.00
+:Version: 1.0.0A
 :Copyright: (C)2014 Silica an Avnet company
 :Date: 30 may 2014
 
