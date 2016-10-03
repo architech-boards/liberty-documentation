@@ -7,25 +7,23 @@ Welcome to Liberty Board's documentation!
 =========================================
 
 :Version: 1.0.0A
-:Copyright: (C)2014 Silica an Avnet company
+:Copyright: (C)2016 Avnet Silica company
 :Date: 30 may 2014
 
 .. image:: _images/rohm.png
 .. image:: _images/lapis.png
 .. image:: _images/kionix.png
 
-.. image:: _images/silica_big.png
-
 .. index:: index
 
 **INTRODUCTION**
 ****************
 
-Silica Liberty board is designed to evaluate BlueTooth Low Energy performance. The main processor is a Renesas R5F100EGANA. The board is also equiped with one ML7105 Lapis BLE module, one KXTJ2-1009 Kionix Accelerometer, one BD1020HFV Rohm Temperature sensor and one SMLP34RGB1W Rohm RGB led.
+Avnet Silica Liberty board is designed to evaluate BlueTooth Low Energy performance. The main processor is a Renesas R5F100EGANA. The board is also equiped with one ML7105 Lapis BLE module, one KXTJ2-1009 Kionix Accelerometer, one BD1020HFV Rohm Temperature sensor and one SMLP34RGB1W Rohm RGB led.
 
 Using a TTL-USB converter connected with UART_TX_OUT signal of 6 pins header and a Terminal SW on the PC (such as HyperTerminal) it's possible to see a "dump" of all data 'send to' and 'received from' ML7105 module. 
 
-BLE_lapis FW project is based on **VSSPP_ML610QXXX_Ver0_094_beta** firmware revision developed for Lapis PEXL7105_WSN kit and adapted for Silica Liberty Board. It is adapted for VSP application; no test has been made for VSSPP application.
+BLE_lapis FW project is based on **VSSPP_ML610QXXX_Ver0_094_beta** firmware revision developed for Lapis PEXL7105_WSN kit and adapted for Avnet Silica Liberty Board. It is adapted for VSP application; no test has been made for VSSPP application.
 
 .. image:: _images/board/liberty1.jpg	
 
@@ -131,7 +129,7 @@ SMLP34RGBxW_last.pdf               RGB Led
 
 .. image:: _images/Doc_Folder.jpg	
 	
-You can download the Liberty.zip and Liberty_doc.zip accessing to Silica Architech website *(registration is needed for download)*
+You can download the Liberty.zip and Liberty_doc.zip accessing to Avnet Silica Architech website *(registration is needed for download)*
 
 **Installing E2studio and KPIT Developement Suite** chapter will guide you through the basic steps of the installation procedure of Developement Suite
 
